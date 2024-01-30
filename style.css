@@ -1,0 +1,108 @@
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+	margin-bottom: 30px;
+}
+
+.cell {
+    border: 1px solid #333;
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s;
+	border-radius: 10px;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    background-color: #ADD8E6;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	 border-radius: 10px;
+}
+
+.matched-words {
+    margin-bottom: 20px;
+}
+
+.matched-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.matched-cell {
+    padding: 15px;
+    text-align: center;
+    background-color: #90EE90; /* Light green */
+    border: 1px solid #333;
+}
+
+.matched-cell-1 {
+    background-color: #90EE90; /* Light green */
+}
+
+.matched-cell-2 {
+    background-color: #ADD8E6; /* Light blue */
+}
+
+.matched-cell-3 {
+    background-color: #FFB6C1; /* Light pink */
+}
+
+.matched-cell-4 {
+    background-color: #FFFF99; /* Light yellow */
+}
+
+.category-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#guesses-remaining {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
