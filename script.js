@@ -1,9 +1,9 @@
 // Define your groups of words with categories
 const groups = [
-    { name: "Has a sword", words: ["Kunkka", "Juggernaut", "Riki", "Huskar"] },
-    { name: "Can 'eat' or be 'eaten'", words: ["Pudge", "Lifestealer", "Phoenix", "Snapfire"] },
-    { name: "Can kill from across the map without actually being there", words: ["Zeus", "Invoker", "Natures Prophet", "Treant Protector"] },
-    { name: "BKB Piercing Ult", words: ["Spirit Breaker", "Vengeful Spirit", "Legion Commander", "Axe"] }
+    { name: "Innate abilities", words: ["Invoke", "Mischief", "Nature's Guise", "Minefield Sign"] },
+    { name: "Directly linked to another ability", words: ["Bedlam", "Call of the Wild Boar", "Illusory Orb", "Tree Dance"] },
+    { name: "Ability with charges", words: ["Shrapnel", "Scurry", "Spirit Siphon", "Proximity Mines"] },
+    { name: "Abilities with sub-abilities", words: ["Snowball", "Tree Grab", "Icarus Dive", "Nightmare"] }
 ];
 
 // Combine all words into a single array and shuffle
